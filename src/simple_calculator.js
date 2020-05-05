@@ -16,5 +16,4 @@ function multiply() {
     return sum
 }
 
-module.exports = add
-module.exports = multiply
+module.exports ={add , multiply}

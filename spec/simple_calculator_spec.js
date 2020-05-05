@@ -1,7 +1,7 @@
 var add = require("../src/simple_calculator")
 var multiply = require("../src/simple_calculator")
 
-describe("Calculate", () => {
+describe("add", () => {
 
     it("should add two intergers 6 and 9"), () => {
         expect(add(6, 9)).toEqual(15)
@@ -14,6 +14,9 @@ describe("Calculate", () => {
     it("should add four intergers 6,4,5 and 9"), () => {
         expect(add(6,4,5,9)).toEqual(24)
     }
+})
+
+describe("multiply", () => {
 
     it("should multiply two intergers 6 and 11"), () => {
         expect(multiply(6, 11)).toEqual(66)
