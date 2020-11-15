@@ -1,19 +1,9 @@
-function add() {
-    let sum = 0
-    for (let x = 0; x < arguments.length; x++) {
-        sum += arguments[x]
-    }
-
-    return sum
+const add = (...nums) => {
+    return nums.reduce((acc, el) => { return acc + el })
 }
 
-function multiply() {
-    let sum = 1
-    for (let x = 0; x < arguments.length; x++) {
-        sum *= arguments[x]
-    }
-
-    return sum
+const multiply = (...nums) => {
+    return nums.reduce((acc, el) => { return acc * el }, 1)
 }
 
-module.exports ={add , multiply}
+module.exports = { add, multiply }
